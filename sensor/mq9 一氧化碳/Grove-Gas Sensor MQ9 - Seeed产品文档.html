@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)https://wiki.seeedstudio.com/cn/Grove-Gas_Sensor-MQ9/ -->
+<html lang="en" class="js supports csstransforms3d no-ios"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript" async="" src="./Grove-Gas Sensor MQ9 - Seeed产品文档_files/analytics.js.下載"></script><script type="text/javascript" async="" src="./Grove-Gas Sensor MQ9 - Seeed产品文档_files/analytics.js.下載"></script><script src="./Grove-Gas Sensor MQ9 - Seeed产品文档_files/highlight.min.js.下載"></script><script src="./Grove-Gas Sensor MQ9 - Seeed产品文档_files/highlightjs-line-numbers.min.js.下載"></script><link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.0/styles/default.min.css"><script id="acad-script" async="async" type="text/javascript" src="./Grove-Gas Sensor MQ9 - Seeed产品文档_files/embed.js.下載"></script><style type="text/css">.hljs-ln{border-collapse:collapse}.hljs-ln td{padding:0}.hljs-ln-n:before{content:attr(data-line-number)}</style></head><body data-md-color-primary="light-green" data-md-color-accent="indigo" data-md-state="">&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+    <script async="" src="./Grove-Gas Sensor MQ9 - Seeed产品文档_files/gtm.js.下載"></script><script async="" src="./Grove-Gas Sensor MQ9 - Seeed产品文档_files/gtm.js(1).下載"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f)})(window,document,'script','dataLayer','GTM-W2VX3NP');</script>
+=======
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f)})(window,document,'script','dataLayer','GTM-MWS4BDL');</script>
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; 60a8f64d0414dcd5cb8612f64b46979443258e0b
+    
+      
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Seeed产品文档-中文">
+      
+      
+        <link rel="canonical" href="http://wiki.seeedstudio.com/cn/Grove-Gas_Sensor-MQ9/">
+      
+      
+        <meta name="author" content="Junjie Chen">
+      
+      
+        <link rel="shortcut icon" href="https://wiki.seeedstudio.com/cn/assets/images/favicon.png">
+      
+      <meta name="generator" content="mkdocs-1.1, mkdocs-material-1.7.4">
+    
+    
+      
+        <title>Grove-Gas Sensor MQ9 - Seeed产品文档</title>
+      
+    
+    
+      <script src="./Grove-Gas Sensor MQ9 - Seeed产品文档_files/modernizr-1df76c4e58.js.下載"></script>
+    
+    
+      <link rel="stylesheet" href="./Grove-Gas Sensor MQ9 - Seeed产品文档_files/application-769c285a91.css">
+      
+        <link rel="stylesheet" href="./Grove-Gas Sensor MQ9 - Seeed产品文档_files/application-02c2a4388f.palette.css">
+      
+    
+    
+      
+        
+        
+        
+        <link rel="stylesheet" href="./Grove-Gas Sensor MQ9 - Seeed产品文档_files/css">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="./Grove-Gas Sensor MQ9 - Seeed产品文档_files/icon">
+    
+    
+      <link rel="stylesheet" href="./Grove-Gas Sensor MQ9 - Seeed产品文档_files/extra.css">
+    
+    
+  
+  
+  
+  
+  
+    
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <header class="md-header" data-md-component="header" data-md-state="shadow">
+  <div class="header-wrap-box">
+    <div class="header-content-wrap clear">
+      <!--start logo-->
+      <div class="logo-box">
+        <a href="https://wiki.seeedstudio.com/">
+          <img class="logo-img" src="./Grove-Gas Sensor MQ9 - Seeed产品文档_files/logo_2018_horizontal.png" width="156" alt="seeedstudio">
+        </a>
+      </div>
+      <!--end logo-->
+      <!--start 导航栏目-->
+      <ul class="nav-tab-list">
+        <li class="nav-tab-item">
+          <h2 class="title-h2">
+            <a class="title j-bz-text" href="https://www.seeedstudio.com/" target="_blank">
+              Bazaar
+            </a>
+          </h2>
+        </li>
+        <li class="nav-tab-item">
+          <h2 class="title-h2">
+            <a class="title j-bz-text" href="https://www.seeedstudio.com/fusion.html" target="_blank">
+              Fusion
+            </a>
+          </h2>
+        </li>
+        <li class="nav-tab-item">
+          <h2 class="title-h2">
+            <a class="title j-bz-text" href="https://www.seeedstudio.com/propagate/" target="_blank">
+              Services
+            </a>
+          </h2>
+        </li>
+        <li class="nav-tab-item">
+          <h2 class="title-h2">
+            <a class="title j-bz-text" href="https://forum.seeedstudio.com/" target="_blank">
+              Forum
+            </a>
+          </h2>
+        </li>
+        <li class="nav-tab-item">
+          <h2 class="title-h2">
+            <a href="https://project.seeedstudio.com/" title="Project Hub" rel="nofollow" target="_blank">Project</a>
+          </h2>
+        </li>
+      </ul>
+      <!--end 导航栏目-->
+    </div>
+  </div>
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink hide">
+        
+        <a href="http://wiki.seeedstudio.com/cn/" title="Seeed产品文档" class="md-logo md-header-nav__button">
+          <img src="./Grove-Gas Sensor MQ9 - Seeed产品文档_files/favicon.ico" width="24" height="24">
+        </a>
+        
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <span class="md-flex__ellipsis md-header-nav__title">
+            
+          <span class="md-header-nav__parent">
+            传感器
+          </span>
+          
+          <span class="md-header-nav__parent">
+            Grove
+          </span>
+            Grove-Gas Sensor MQ9 
+        </span>
+        <span class="language mLanguage" id="m-language-site-nav"><a class="cn" data-lang="cn" href="javascript:;">中文</a><a class="en" data-lang="en" href="https://wiki.seeedstudio.com/Grove-Gas_Sensor-MQ9/">EN</a><a class="jp" data-lang="jp" href="https://wiki.seeedstudio.com/jp/Grove-Gas_Sensor-MQ9/">日本語</a><a class="vn" data-lang="vn" href="https://wiki.seeedstudio.com/vn/Grove-Gas_Sensor-MQ9/">VN</a><a class="id" data-lang="id" href="https://wiki.seeedstudio.com/id/Grove-Gas_Sensor-MQ9/">IDN</a><a class="cz" data-lang="cz" href="https://wiki.seeedstudio.com/cz/Grove-Gas_Sensor-MQ9/">Czech</a><a class="ph" data-lang="ph" href="https://wiki.seeedstudio.com/ph/Grove-Gas_Sensor-MQ9/">Filipino</a></span>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+        <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+        
+<div class="md-search" data-md-component="search">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" required="" placeholder="Search" accesskey="s" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">close</button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix="">
+        <div class="md-search-result" data-md-component="result" data-md-lang-search="">
+          <div class="md-search-result__meta" data-md-lang-result-none="No matching documents" data-md-lang-result-one="1 matching document" data-md-lang-result-other="# matching documents">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> 
+      </div>
+      
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <div class="md-header-nav__source">
+          <!-- 
+
+
+  
+
+
+  <a href="http://wiki.seeedstudio.com/cn/" title="Go to repository" class="md-source" data-md-source="">
+    
+    <div class="md-source__repository">
+      Wiki
+    </div>
+  </a>
+ -->
+          <span class="language" id="language-site-nav"><a class="cn" data-lang="cn" href="javascript:;">中文</a><a class="en" data-lang="en" href="https://wiki.seeedstudio.com/Grove-Gas_Sensor-MQ9/">EN</a><a class="jp" data-lang="jp" href="https://wiki.seeedstudio.com/jp/Grove-Gas_Sensor-MQ9/">日本語</a><a class="vn" data-lang="vn" href="https://wiki.seeedstudio.com/vn/Grove-Gas_Sensor-MQ9/">VN</a><a class="id" data-lang="id" href="https://wiki.seeedstudio.com/id/Grove-Gas_Sensor-MQ9/">IDN</a><a class="cz" data-lang="cz" href="https://wiki.seeedstudio.com/cz/Grove-Gas_Sensor-MQ9/">Czech</a><a class="ph" data-lang="ph" href="https://wiki.seeedstudio.com/ph/Grove-Gas_Sensor-MQ9/">Filipino</a></span>
+        </div>
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation" style="height: 435px;">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    
+      <i class="md-logo md-nav__button">
+        <img src="./Grove-Gas Sensor MQ9 - Seeed产品文档_files/favicon.ico">
+      </i>
+    
+    Seeed产品文档
+  </label>
+  
+    <!-- <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="http://wiki.seeedstudio.com/cn/" title="Go to repository" class="md-source" data-md-source="">
+    
+    <div class="md-source__repository">
+      Wiki
+    </div>
+  </a>
+
+    </div> -->
+  
+  <ul class="md-nav__list" data-md-scrollfix=""><li data-track-index="0" data-track-id="0" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/" class="md-nav__link ">Seeed文档中文站点介绍</a></li><li data-track-index="1" data-track-id="1" class="md-nav__item  md-nav__item--nested"><input type="checkbox" class="md-toggle md-nav__toggle" id="nav-2" data-track-id="1" data-track-index="1" data-md-toggle="nav-2"><label class="md-nav__link" for="nav-2">平台</label><nav class="md-nav" data-md-component="collapsible" data-md-level="1"><label class="md-nav__title" for="nav-2">平台</label><ul class="md-nav__list" data-track-id="1" data-md-level="1" data-md-scrollfix=""> </ul></nav></li><li data-track-index="2" data-track-id="2" class="md-nav__item  md-nav__item--nested"><input type="checkbox" class="md-toggle md-nav__toggle" id="nav-3" data-track-id="2" data-track-index="2" data-md-toggle="nav-3"><label class="md-nav__link" for="nav-3">Grove</label><nav class="md-nav" data-md-component="collapsible" data-md-level="1"><label class="md-nav__title" for="nav-3">Grove</label><ul class="md-nav__list" data-track-id="2" data-md-level="1" data-md-scrollfix=""><li data-track-index="0" data-track-id="2-0" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove_System/" class="md-nav__link ">Grove系统</a></li><li data-track-index="1" data-track-id="2-1" class="md-nav__item  md-nav__item--nested"><input type="checkbox" class="md-toggle md-nav__toggle" id="nav-3-2" data-track-id="2-1" data-track-index="1" data-md-toggle="nav-3-2"><label class="md-nav__link" for="nav-3-2">传感器</label><nav class="md-nav" data-md-component="collapsible" data-md-level="2"><label class="md-nav__title" for="nav-3-2">传感器</label><ul class="md-nav__list" data-track-id="2-1" data-md-level="2" data-md-scrollfix=""><li data-track-index="0" data-track-id="2-1-0" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Sensor/" class="md-nav__link ">传感器清单</a></li><li data-track-index="1" data-track-id="2-1-1" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-3-Axis_Analog_Accelerometer/" class="md-nav__link ">Grove-3 Axis Analog Accelerometer</a></li><li data-track-index="2" data-track-id="2-1-2" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-3-Axis_Compass_V1.0/" class="md-nav__link ">Grove-3 Axis Compass V1.0</a></li><li data-track-index="3" data-track-id="2-1-3" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-3-Axis_Digital_Accelerometer-1.5g/" class="md-nav__link ">Grove-3 Axis Digital Accelerometer 1.5g</a></li><li data-track-index="4" data-track-id="2-1-4" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-3-Axis_Digital_Accelerometer-16g/" class="md-nav__link ">Grove-3 Axis Digital Accelerometer 16g</a></li><li data-track-index="5" data-track-id="2-1-5" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-3-Axis_Digital_Accelerometer-400g/" class="md-nav__link ">Grove-3 Axis Digital Accelerometer 400g</a></li><li data-track-index="6" data-track-id="2-1-6" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-3-Axis_Digital_Gyro/" class="md-nav__link ">Grove-3 Axis Digital Gyro</a></li><li data-track-index="7" data-track-id="2-1-7" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-6-Axis_AccelerometerAndGyroscope/" class="md-nav__link ">Grove-6 Axis AccelerometerAndGyroscope</a></li><li data-track-index="8" data-track-id="2-1-8" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-6-Axis_AccelerometerAndCompass_V2.0/" class="md-nav__link ">Grove-6-Axis AccelerometerAndCompass V2.0</a></li><li data-track-index="9" data-track-id="2-1-9" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-80cm_Infrared_Proximity_Sensor/" class="md-nav__link ">Grove-80cm Infrared Proximity Sensor</a></li><li data-track-index="10" data-track-id="2-1-10" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-IMU_9DOF-lcm20600+AK09918/" class="md-nav__link ">Grove-IMU 9DOF (lcm20600+AK09918)</a></li><li data-track-index="11" data-track-id="2-1-11" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-12_Key_Capacitive_I2C_Touch_Sensor_V2-MPR121/" class="md-nav__link ">Grove-12 Key Capacitive I2C Touch Sensor V2 (MPR121)</a></li><li data-track-index="12" data-track-id="2-1-12" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-Air_Quality_Sensor_v1.3/" class="md-nav__link ">Grove-Air Quality Sensor v1.3</a></li><li data-track-index="13" data-track-id="2-1-13" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-Alcohol_Sensor/" class="md-nav__link ">Grove-Alcohol Sensor</a></li><li data-track-index="14" data-track-id="2-1-14" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-Barometer_High_Accuracy/" class="md-nav__link ">Grove-Barometer High Accuracy</a></li><li data-track-index="15" data-track-id="2-1-15" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-Barometer_Sensor-BME280/" class="md-nav__link ">Grove-Barometer Sensor BME280</a></li><li data-track-index="16" data-track-id="2-1-16" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-Barometer_Sensor-BMP280/" class="md-nav__link ">Grove-Barometer Sensor BMP280</a></li><li data-track-index="17" data-track-id="2-1-17" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-CO2_Sensor/" class="md-nav__link ">Grove-CO2 Sensor</a></li><li data-track-index="18" data-track-id="2-1-18" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-Collision_Sensor/" class="md-nav__link ">Grove-Collision Sensor</a></li><li data-track-index="19" data-track-id="2-1-19" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-Digital_Distance_Interrupter_0.5_to_5cm-GP2Y0D805Z0F/" class="md-nav__link ">Grove-Digital Distance Interrupter 0.5 to 5cm GP2Y0D805Z0F</a></li><li data-track-index="20" data-track-id="2-1-20" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-Digital_Infrared_Temperature_Sensor/" class="md-nav__link ">Grove-Digital Infrared Temperature Sensor</a></li><li data-track-index="21" data-track-id="2-1-21" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-Digital_Light_Sensor/" class="md-nav__link ">Grove-Digital Light Sensor</a></li><li data-track-index="22" data-track-id="2-1-22" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-Dust_Sensor/" class="md-nav__link ">Grove-Dust Sensor</a></li><li data-track-index="23" data-track-id="2-1-23" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-Ear-clip_Heart_Rate_Sensor/" class="md-nav__link ">Grove-Ear clip Heart Rate Sensor</a></li><li data-track-index="24" data-track-id="2-1-24" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-Electricity_Sensor/" class="md-nav__link ">Grove-Electricity Sensor</a></li><li data-track-index="25" data-track-id="2-1-25" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-Electromagnet/" class="md-nav__link ">Grove-Electromagnet</a></li><li data-track-index="26" data-track-id="2-1-26" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-EMG_Detector/" class="md-nav__link ">Grove-EMG Detector</a></li><li data-track-index="27" data-track-id="2-1-27" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-Encoder/" class="md-nav__link ">Grove-Encoder</a></li><li data-track-index="28" data-track-id="2-1-28" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-Finger-clip_Heart_Rate_Sensor_with_shell/" class="md-nav__link ">Grove-Finger clip Heart Rate Sensor with shell</a></li><li data-track-index="29" data-track-id="2-1-29" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-Finger-clip_Heart_Rate_Sensor/" class="md-nav__link ">Grove-Finger clip Heart Rate Sensor</a></li><li data-track-index="30" data-track-id="2-1-30" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-Fingerprint_Sensor/" class="md-nav__link ">Grove-Fingerprint Sensor</a></li><li data-track-index="31" data-track-id="2-1-31" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-Flame_Sensor/" class="md-nav__link ">Grove-Flame Sensor</a></li><li data-track-index="32" data-track-id="2-1-32" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-Gas_Sensor-MQ2/" class="md-nav__link ">Grove-Gas Sensor MQ2</a></li><li data-track-index="33" data-track-id="2-1-33" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-Gas_Sensor-MQ3/" class="md-nav__link ">Grove-Gas Sensor MQ3</a></li><li data-track-index="34" data-track-id="2-1-34" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-Gas_Sensor-MQ5/" class="md-nav__link ">Grove-Gas Sensor MQ5</a></li><li data-track-index="35" data-track-id="2-1-35" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-Gas_Sensor-MQ9/" class="md-nav__link md-nav__link--active">Grove-Gas Sensor MQ9</a></li><li data-track-index="36" data-track-id="2-1-36" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-Gas_Sensor-O2/" class="md-nav__link ">Grove-Gas Sensor O2</a></li><li data-track-index="37" data-track-id="2-1-37" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-Gesture_v1.0/" class="md-nav__link ">Grove-Gesture v1.0</a></li><li data-track-index="38" data-track-id="2-1-38" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-GSR_Sensor/" class="md-nav__link ">Grove-GSR Sensor</a></li><li data-track-index="39" data-track-id="2-1-39" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-Hall_Sensor/" class="md-nav__link ">Grove-Hall Sensor</a></li><li data-track-index="40" data-track-id="2-1-40" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-HCHO_Sensor/" class="md-nav__link ">Grove-HCHO Sensor</a></li><li data-track-index="41" data-track-id="2-1-41" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-High_Temperature_Sensor/" class="md-nav__link ">Grove-High Temperature Sensor</a></li><li data-track-index="42" data-track-id="2-1-42" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-I2C_Color_Sensor/" class="md-nav__link ">Grove-I2C Color Sensor</a></li><li data-track-index="43" data-track-id="2-1-43" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-I2C_FM_Receiver/" class="md-nav__link ">Grove-I2C FM Receiver</a></li><li data-track-index="44" data-track-id="2-1-44" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-I2C_Touch_Sensor/" class="md-nav__link ">Grove-I2C Touch Sensor</a></li><li data-track-index="45" data-track-id="2-1-45" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-I2C_High_Accuracy_Temperature_Sensor-MCP9808/" class="md-nav__link ">Grove-I2C_High_Accuracy_Temperature_Sensor-MCP9808</a></li><li data-track-index="46" data-track-id="2-1-46" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-IMU_10DOF_v2.0/" class="md-nav__link ">Grove-IMU 10DOF v2.0</a></li><li data-track-index="47" data-track-id="2-1-47" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-IMU_9DOF_v2.0/" class="md-nav__link ">Grove-IMU 9DOF v2.0</a></li><li data-track-index="48" data-track-id="2-1-48" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-Infrared_Temperature_Sensor/" class="md-nav__link ">Grove-Infrared Temperature Sensor</a></li><li data-track-index="49" data-track-id="2-1-49" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-IR_Distance_Interrupter_v1.2/" class="md-nav__link ">Grove-IR Distance Interrupter v1.2</a></li><li data-track-index="50" data-track-id="2-1-50" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-Light_Sensor/" class="md-nav__link ">Grove-Light Sensor</a></li><li data-track-index="51" data-track-id="2-1-51" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-Line_Finder/" class="md-nav__link ">Grove-Line Finder</a></li><li data-track-index="52" data-track-id="2-1-52" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-Loudness_Sensor/" class="md-nav__link ">Grove-Loudness Sensor</a></li><li data-track-index="53" data-track-id="2-1-53" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-Luminance_Sensor/" class="md-nav__link ">Grove-Luminance Sensor</a></li><li data-track-index="54" data-track-id="2-1-54" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-Mech_Keycap/" class="md-nav__link ">Grove-Mech Keycap</a></li><li data-track-index="55" data-track-id="2-1-55" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-Moisture_Sensor/" class="md-nav__link ">Grove-Moisture Sensor</a></li><li data-track-index="56" data-track-id="2-1-56" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-MOSFET/" class="md-nav__link ">Grove-MOSFET</a></li><li data-track-index="57" data-track-id="2-1-57" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-Multichannel_Gas_Sensor/" class="md-nav__link ">Grove-Multichannel Gas Sensor</a></li><li data-track-index="58" data-track-id="2-1-58" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-Optical_Rotary_Encoder-TCUT1600X01/" class="md-nav__link ">Grove-Optical Rotary Encoder(TCUT1600X01)</a></li><li data-track-index="59" data-track-id="2-1-59" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-Piezo_Vibration_Sensor/" class="md-nav__link ">Grove-Piezo Vibration Sensor</a></li><li data-track-index="60" data-track-id="2-1-60" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-PIR_Motion_Sensor/" class="md-nav__link ">Grove-PIR Motion Sensor</a></li><li data-track-index="61" data-track-id="2-1-61" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-Q_Touch_Sensor/" class="md-nav__link ">Grove-Q Touch Sensor</a></li><li data-track-index="62" data-track-id="2-1-62" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-Rotary_Angle_Sensor/" class="md-nav__link ">Grove-Rotary Angle Sensor</a></li><li data-track-index="63" data-track-id="2-1-63" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-Round_Force_Sensor_FSR402/" class="md-nav__link ">Grove-Round_Force_Sensor_FSR402</a></li><li data-track-index="64" data-track-id="2-1-64" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-Sound_Sensor/" class="md-nav__link ">Grove-Sound Sensor</a></li><li data-track-index="65" data-track-id="2-1-65" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-Speech_Recognizer/" class="md-nav__link ">Grove-Speech Recognizer</a></li><li data-track-index="66" data-track-id="2-1-66" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-Sunlight_Sensor/" class="md-nav__link ">Grove-Sunlight Sensor</a></li><li data-track-index="67" data-track-id="2-1-67" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-Temperature_and_Humidity_Sensor_Pro/" class="md-nav__link ">Grove-Temperature and Humidity Sensor Pro</a></li><li data-track-index="68" data-track-id="2-1-68" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-Temperature_and_Humidity_Sensor/" class="md-nav__link ">Grove-Temperature and Humidity Sensor</a></li><li data-track-index="69" data-track-id="2-1-69" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-TempAndHumi_Sensor-SHT31/" class="md-nav__link ">Grove-Temperature and Humidity Sensor-SHT31</a></li><li data-track-index="70" data-track-id="2-1-70" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-Temperature_Sensor/" class="md-nav__link ">Grove-Temperature Sensor</a></li><li data-track-index="71" data-track-id="2-1-71" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-Temperature_Sensor_V1.2/" class="md-nav__link ">Grove-Temperature Sensor-V1.2</a></li><li data-track-index="72" data-track-id="2-1-72" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-Temperature_Humidity_Pressure_Gas_Sensor/" class="md-nav__link ">Grove-Temperature Humidity Pressure Gas Sensor(BME680)</a></li><li data-track-index="73" data-track-id="2-1-73" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-TemptureAndHumidity_Sensor_High_Accuracy_AndMini-v1.0/" class="md-nav__link ">Grove-Tempture and Humidity Sensor High Accuracy Mini-v1.0</a></li><li data-track-index="74" data-track-id="2-1-74" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-TF_Mini_LiDAR/" class="md-nav__link ">Grove-TF Mini LiDAR</a></li><li data-track-index="75" data-track-id="2-1-75" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-Time_of_Flight_Distance_Sensor-VL53L0X/" class="md-nav__link ">Grove-Time of Flight Distance Sensor VL53L0X</a></li><li data-track-index="76" data-track-id="2-1-76" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-Touch_Sensor/" class="md-nav__link ">Grove-Touch Sensor</a></li><li data-track-index="77" data-track-id="2-1-77" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-Ultrasonic_Ranger/" class="md-nav__link ">Grove-Ultrasonic Ranger</a></li><li data-track-index="78" data-track-id="2-1-78" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-UV_Sensor/" class="md-nav__link ">Grove-UV Sensor</a></li><li data-track-index="79" data-track-id="2-1-79" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-Vibration_Motor/" class="md-nav__link ">Grove-Vibration Motor</a></li><li data-track-index="80" data-track-id="2-1-80" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-Vibration_Sensor_SW-420/" class="md-nav__link ">Grove-Vibration Sensor (SW-420)</a></li><li data-track-index="81" data-track-id="2-1-81" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-VOC_and_eCO2_Gas_Sensor-SGP30/" class="md-nav__link ">Grove-VOC and eCO2 Gas Sensor SGP30</a></li><li data-track-index="82" data-track-id="2-1-82" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/Grove-Water_Sensor/" class="md-nav__link ">Grove-Water Sensor</a></li></ul></nav></li><li data-track-index="2" data-track-id="2-2" class="md-nav__item  md-nav__item--nested"><input type="checkbox" class="md-toggle md-nav__toggle" id="nav-3-3" data-track-id="2-2" data-track-index="2" data-md-toggle="nav-3-3"><label class="md-nav__link" for="nav-3-3">执行器</label><nav class="md-nav" data-md-component="collapsible" data-md-level="2"><label class="md-nav__title" for="nav-3-3">执行器</label><ul class="md-nav__list" data-track-id="2-2" data-md-level="2" data-md-scrollfix=""> </ul></nav></li><li data-track-index="3" data-track-id="2-3" class="md-nav__item  md-nav__item--nested"><input type="checkbox" class="md-toggle md-nav__toggle" id="nav-3-4" data-track-id="2-3" data-track-index="3" data-md-toggle="nav-3-4"><label class="md-nav__link" for="nav-3-4">显示器</label><nav class="md-nav" data-md-component="collapsible" data-md-level="2"><label class="md-nav__title" for="nav-3-4">显示器</label><ul class="md-nav__list" data-track-id="2-3" data-md-level="2" data-md-scrollfix=""> </ul></nav></li><li data-track-index="4" data-track-id="2-4" class="md-nav__item  md-nav__item--nested"><input type="checkbox" class="md-toggle md-nav__toggle" id="nav-3-5" data-track-id="2-4" data-track-index="4" data-md-toggle="nav-3-5"><label class="md-nav__link" for="nav-3-5">Communication</label><nav class="md-nav" data-md-component="collapsible" data-md-level="2"><label class="md-nav__title" for="nav-3-5">Communication</label><ul class="md-nav__list" data-track-id="2-4" data-md-level="2" data-md-scrollfix=""> </ul></nav></li></ul></nav></li><li data-track-index="3" data-track-id="3" class="md-nav__item  md-nav__item--nested"><input type="checkbox" class="md-toggle md-nav__toggle" id="nav-4" data-track-id="3" data-track-index="3" data-md-toggle="nav-4"><label class="md-nav__link" for="nav-4">其他</label><nav class="md-nav" data-md-component="collapsible" data-md-level="1"><label class="md-nav__title" for="nav-4">其他</label><ul class="md-nav__list" data-track-id="3" data-md-level="1" data-md-scrollfix=""> </ul></nav></li><li data-track-index="4" data-track-id="4" class="md-nav__item  md-nav__item--nested"><input type="checkbox" class="md-toggle md-nav__toggle" id="nav-5" data-track-id="4" data-track-index="4" data-md-toggle="nav-5"><label class="md-nav__link" for="nav-5">IoT</label><nav class="md-nav" data-md-component="collapsible" data-md-level="1"><label class="md-nav__title" for="nav-5">IoT</label><ul class="md-nav__list" data-track-id="4" data-md-level="1" data-md-scrollfix=""> </ul></nav></li><li data-track-index="5" data-track-id="5" class="md-nav__item  md-nav__item--nested"><input type="checkbox" class="md-toggle md-nav__toggle" id="nav-6" data-track-id="5" data-track-index="5" data-md-toggle="nav-6"><label class="md-nav__link" for="nav-6">kit套件</label><nav class="md-nav" data-md-component="collapsible" data-md-level="1"><label class="md-nav__title" for="nav-6">kit套件</label><ul class="md-nav__list" data-track-id="5" data-md-level="1" data-md-scrollfix=""> </ul></nav></li><li data-track-index="6" data-track-id="6" class="md-nav__item  md-nav__item--nested"><input type="checkbox" class="md-toggle md-nav__toggle" id="nav-7" data-track-id="6" data-track-index="6" data-md-toggle="nav-7"><label class="md-nav__link" for="nav-7">MakerPro</label><nav class="md-nav" data-md-component="collapsible" data-md-level="1"><label class="md-nav__title" for="nav-7">MakerPro</label><ul class="md-nav__list" data-track-id="6" data-md-level="1" data-md-scrollfix=""> </ul></nav></li><li data-track-index="7" data-track-id="7" class="md-nav__item  md-nav__item--nested"><input type="checkbox" class="md-toggle md-nav__toggle" id="nav-8" data-track-id="7" data-track-index="7" data-md-toggle="nav-8"><label class="md-nav__link" for="nav-8">使用教程</label><nav class="md-nav" data-md-component="collapsible" data-md-level="1"><label class="md-nav__title" for="nav-8">使用教程</label><ul class="md-nav__list" data-track-id="7" data-md-level="1" data-md-scrollfix=""> </ul></nav></li><li data-track-index="8" data-track-id="8" class="md-nav__item"><a href="https://wiki.seeedstudio.com/cn/license/" class="md-nav__link ">文档协议</a></li></ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" style="height: 435px;">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="https://wiki.seeedstudio.com/cn/Grove-Gas_Sensor-MQ9/#_1" title="产品特性" class="md-nav__link">
+    产品特性
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="https://wiki.seeedstudio.com/cn/Grove-Gas_Sensor-MQ9/#_2" title="产品参数" class="md-nav__link">
+    产品参数
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="https://wiki.seeedstudio.com/cn/Grove-Gas_Sensor-MQ9/#_3" title="支持平台" class="md-nav__link">
+    支持平台
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="https://wiki.seeedstudio.com/cn/Grove-Gas_Sensor-MQ9/#_4" title="创意应用" class="md-nav__link">
+    创意应用
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="https://wiki.seeedstudio.com/cn/Grove-Gas_Sensor-MQ9/#_5" title="硬件概述" class="md-nav__link">
+    硬件概述
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="https://wiki.seeedstudio.com/cn/Grove-Gas_Sensor-MQ9/#_6" title="入门指导" class="md-nav__link">
+    入门指导
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="https://wiki.seeedstudio.com/cn/Grove-Gas_Sensor-MQ9/#_7" title="气体检测：基本例子" class="md-nav__link">
+    气体检测：基本例子
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="https://wiki.seeedstudio.com/cn/Grove-Gas_Sensor-MQ9/#_8" title="测量：近似值" class="md-nav__link">
+    测量：近似值
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="https://wiki.seeedstudio.com/cn/Grove-Gas_Sensor-MQ9/#_9" title="资源下载" class="md-nav__link">
+    资源下载
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="https://wiki.seeedstudio.com/cn/Grove-Gas_Sensor-MQ9/#_10" title="原理图在线预览" class="md-nav__link">
+    原理图在线预览
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="https://wiki.seeedstudio.com/cn/Grove-Gas_Sensor-MQ9/#_11" title="原理图" class="md-nav__link">
+    原理图
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>Grove-Gas Sensor MQ9</h1>
+                
+                <p><img alt="" src="./Grove-Gas Sensor MQ9 - Seeed产品文档_files/Grove_MQ3_Gas_Sensor.jpg"></p>
+<p>Grove - Gas Sensor(MQ9)模块可用于气体泄漏检测（可以在家里和工厂中使用）。 它适用于检测 <font color="“Blue”">LPG，CO，CH4</font> 。 由于其的灵敏度高，响应时间快，所以能够时时进行测量。 传感器的灵敏度可以通过使用电位器进行调整。</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>这个传感器值仅能够反映气体浓度在允许误差范围内的近似趋势，它不表示精确的气体浓度。 空气中某些成分的检测通常需要更加精确和更加昂贵的仪器，这不能单单使用这个气体传感器来完成。 如果您的项目想要非常精确的得到气体浓度，那么我们不推荐使用这种气体传感器。</p>
+</div>
+<div class="md-typeset__scrollwrap"><div class="md-typeset__table"><table>
+<thead>
+<tr>
+<th>传感器</th>
+<th>检测气体类型</th>
+<th>购买地址</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MQ2</td>
+<td>可燃气体，烟雾</td>
+<td><a href="https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-11172317909.10.16ffcea31SnYiT&amp;amp;amp;id=520242943642">点击购买</a></td>
+</tr>
+<tr>
+<td>MQ3</td>
+<td>酒精蒸气</td>
+<td><a href="https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-11172317909.9.15852b36Zh3I85&amp;amp;amp;id=45575808671">点击购买</a></td>
+</tr>
+<tr>
+<td>MQ5</td>
+<td>石油气，天然气，城镇煤气</td>
+<td><a href="https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-11172317909.10.1a5dbea7KWe93J&amp;amp;amp;id=45508638349">点击购买</a></td>
+</tr>
+<tr>
+<td>MQ9</td>
+<td>一氧化碳，煤气，液化气</td>
+<td><a href="https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-11172317909.14.51352e2wNrNua&amp;amp;amp;id=45575800587">点击购买</a></td>
+</tr>
+</tbody>
+</table></div></div>
+<h2 id="_1">产品特性<a class="headerlink" href="https://wiki.seeedstudio.com/cn/Grove-Gas_Sensor-MQ9/#_1" title="Permanent link">¶</a></h2>
+<ul>
+<li>检测范围广</li>
+<li>能够稳定和长时间使用</li>
+<li>响应快，灵敏度高</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>关于Grove模块的更多细节请参考 <a href="http://wiki.seeedstudio.com/cn/Grove_System/">Grove System</a></p>
+</div>
+<h2 id="_2">产品参数<a class="headerlink" href="https://wiki.seeedstudio.com/cn/Grove-Gas_Sensor-MQ9/#_2" title="Permanent link">¶</a></h2>
+<div class="md-typeset__scrollwrap"><div class="md-typeset__table"><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>参数</th>
+<th>最小</th>
+<th>标准</th>
+<th>最大</th>
+<th>单位</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>VCC</td>
+<td>工作电压</td>
+<td>4.9</td>
+<td>5</td>
+<td>5.1</td>
+<td>V</td>
+</tr>
+<tr>
+<td>PH</td>
+<td>消耗能量</td>
+<td>0.5</td>
+<td>-</td>
+<td>340</td>
+<td>mW</td>
+</tr>
+<tr>
+<td>RL</td>
+<td>负载电阻</td>
+<td></td>
+<td>可调整的</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>RH</td>
+<td>加热器电阻</td>
+<td>-</td>
+<td>33Ω±5%</td>
+<td>-</td>
+<td>Ω</td>
+</tr>
+<tr>
+<td>Rs</td>
+<td>感应电阻</td>
+<td>2</td>
+<td>-</td>
+<td>20000</td>
+<td>Ω</td>
+</tr>
+<tr>
+<td>CO / CH4 / LPG范围</td>
+<td>检测浓度</td>
+<td>200</td>
+<td>-</td>
+<td>1000/10000/10000</td>
+<td>ppm</td>
+</tr>
+</tbody>
+</table></div></div>
+<h2 id="_3">支持平台<a class="headerlink" href="https://wiki.seeedstudio.com/cn/Grove-Gas_Sensor-MQ9/#_3" title="Permanent link">¶</a></h2>
+<h2 id="_4">创意应用<a class="headerlink" href="https://wiki.seeedstudio.com/cn/Grove-Gas_Sensor-MQ9/#_4" title="Permanent link">¶</a></h2>
+<ul>
+<li>气体泄漏检测。</li>
+<li>玩具。</li>
+</ul>
+<h2 id="_5">硬件概述<a class="headerlink" href="https://wiki.seeedstudio.com/cn/Grove-Gas_Sensor-MQ9/#_5" title="Permanent link">¶</a></h2>
+<p>这是一个以模拟量输出的传感器。 这需要连接到<a href="https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-11172317909.10.49bd3ea9eDqLsu&amp;id=520233320144">Grove Base Shield</a>中的一个模拟端口。 本教程中的示例使用的是 <strong>A0</strong> 模拟引脚。 将此模块连接到Base Shield的 <strong>A0</strong> 端口。</p>
+<p>使用连接线将Grove模块按照下表连接到Arduino：</p>
+<div class="md-typeset__scrollwrap"><div class="md-typeset__table"><table>
+<thead>
+<tr>
+<th>Arduino</th>
+<th>Gas Sensor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5V</td>
+<td>VCC</td>
+</tr>
+<tr>
+<td>GND</td>
+<td>GND</td>
+</tr>
+<tr>
+<td>NC</td>
+<td>NC</td>
+</tr>
+<tr>
+<td>A0</td>
+<td>SIG</td>
+</tr>
+</tbody>
+</table></div></div>
+<p>当气体浓度增加时，气体传感器的输出电压会增加。 灵敏度可以通过改变电位器来调节。 <font color="Red">请注意，传感器的最佳预热时间需要超过24小时</font>。 有关MQ-9传感器的详细信息，请参阅 <strong>资源下载</strong> 部分中提供的数据表。</p>
+<h2 id="_6">入门指导<a class="headerlink" href="https://wiki.seeedstudio.com/cn/Grove-Gas_Sensor-MQ9/#_6" title="Permanent link">¶</a></h2>
+<p><img alt="" src="./Grove-Gas Sensor MQ9 - Seeed产品文档_files/Read_Gas_Sensor_data.jpg"></p>
+<p>将 Grove - Gas Sensor(MQ9)连接到 <strong>A0</strong> 端口，如上图所示。</p>
+<h3 id="_7">气体检测：基本例子<a class="headerlink" href="https://wiki.seeedstudio.com/cn/Grove-Gas_Sensor-MQ9/#_7" title="Permanent link">¶</a></h3>
+<p>在这个例子中，传感器连接到 <strong>A0</strong> 引脚。 从传感器读取到的电压可以显示出来。 并且该值可以用作检测气体浓度是否增加/减少的基准。</p>
+<div class="highlight" id="__code_0"><button class="md-clipboard" title="Copy to clipboard" data-clipboard-target="#__code_0 pre, #__code_0 code"><span class="md-clipboard__message"></span></button><pre id="__code_1"><span></span><button class="md-clipboard" title="Copy to clipboard" data-clipboard-target="#__code_1 pre, #__code_1 code"><span class="md-clipboard__message"></span></button><code class="hljs cpp"><table class="hljs-ln"><tbody><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="1"><div class="hljs-ln-n" data-line-number="1"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="1"><span class="kt"><span class="hljs-function"><span class="hljs-keyword">void</span></span></span><span class="hljs-function"> </span><span class="nf"><span class="hljs-function"><span class="hljs-title">setup</span></span></span><span class="p"><span class="hljs-function"><span class="hljs-params">()</span></span></span><span class="hljs-function"> </span><span class="p">{</span></td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="2"><div class="hljs-ln-n" data-line-number="2"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="2">    <span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi"><span class="hljs-number">9600</span></span><span class="p">);</span></td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="3"><div class="hljs-ln-n" data-line-number="3"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="3"><span class="p">}</span></td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="4"><div class="hljs-ln-n" data-line-number="4"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="4"> </td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="5"><div class="hljs-ln-n" data-line-number="5"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="5"><span class="kt"><span class="hljs-function"><span class="hljs-keyword">void</span></span></span><span class="hljs-function"> </span><span class="nf"><span class="hljs-function"><span class="hljs-title">loop</span></span></span><span class="p"><span class="hljs-function"><span class="hljs-params">()</span></span></span><span class="hljs-function"> </span><span class="p">{</span></td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="6"><div class="hljs-ln-n" data-line-number="6"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="6">    <span class="kt"><span class="hljs-keyword">float</span></span> <span class="n">sensor_volt</span><span class="p">;</span></td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="7"><div class="hljs-ln-n" data-line-number="7"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="7">    <span class="kt"><span class="hljs-keyword">float</span></span> <span class="n">sensorValue</span><span class="p">;</span></td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="8"><div class="hljs-ln-n" data-line-number="8"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="8"> </td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="9"><div class="hljs-ln-n" data-line-number="9"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="9">    <span class="n">sensorValue</span> <span class="o">=</span> <span class="n">analogRead</span><span class="p">(</span><span class="n">A0</span><span class="p">);</span></td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="10"><div class="hljs-ln-n" data-line-number="10"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="10">    <span class="n">sensor_volt</span> <span class="o">=</span> <span class="n">sensorValue</span><span class="o">/</span><span class="mi"><span class="hljs-number">1024</span></span><span class="o">*</span><span class="mf"><span class="hljs-number">5.0</span></span><span class="p">;</span></td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="11"><div class="hljs-ln-n" data-line-number="11"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="11"> </td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="12"><div class="hljs-ln-n" data-line-number="12"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="12">    <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s"><span class="hljs-string">"sensor_volt = "</span></span><span class="p">);</span></td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="13"><div class="hljs-ln-n" data-line-number="13"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="13">    <span class="n">Serial</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="n">sensor_volt</span><span class="p">);</span></td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="14"><div class="hljs-ln-n" data-line-number="14"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="14">    <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s"><span class="hljs-string">"V"</span></span><span class="p">);</span></td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="15"><div class="hljs-ln-n" data-line-number="15"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="15">    <span class="n">delay</span><span class="p">(</span><span class="mi"><span class="hljs-number">1000</span></span><span class="p">);</span></td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="16"><div class="hljs-ln-n" data-line-number="16"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="16"><span class="p">}</span></td></tr></tbody></table></code></pre></div>
+
+<h3 id="_8">测量：近似值<a class="headerlink" href="https://wiki.seeedstudio.com/cn/Grove-Gas_Sensor-MQ9/#_8" title="Permanent link">¶</a></h3>
+<p>这个例子介绍了一种知道气体近似浓度的方法。 根据MQ9传感器的数据表，在标准条件下对这些方程计算的结果进行测试，不需要进行校准。 不过它可能会根据温度或湿度的变化而变化。</p>
+<ol>
+<li>将气体传感器保持在清洁的空气环境中。 上传以下程序。</li>
+</ol>
+<div class="highlight" id="__code_2"><button class="md-clipboard" title="Copy to clipboard" data-clipboard-target="#__code_2 pre, #__code_2 code"><span class="md-clipboard__message"></span></button><pre id="__code_3"><span></span><button class="md-clipboard" title="Copy to clipboard" data-clipboard-target="#__code_3 pre, #__code_3 code"><span class="md-clipboard__message"></span></button><code class="hljs php"><table class="hljs-ln"><tbody><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="1"><div class="hljs-ln-n" data-line-number="1"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="1"><span class="kt"><span class="hljs-keyword">void</span></span> <span class="nf">setup</span><span class="p">()</span> <span class="p">{</span></td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="2"><div class="hljs-ln-n" data-line-number="2"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="2">    <span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi"><span class="hljs-number">9600</span></span><span class="p">);</span></td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="3"><div class="hljs-ln-n" data-line-number="3"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="3"><span class="p">}</span></td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="4"><div class="hljs-ln-n" data-line-number="4"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="4"> </td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="5"><div class="hljs-ln-n" data-line-number="5"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="5"><span class="kt"><span class="hljs-keyword">void</span></span> <span class="nf">loop</span><span class="p">()</span> <span class="p">{</span></td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="6"><div class="hljs-ln-n" data-line-number="6"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="6">    <span class="kt"><span class="hljs-keyword">float</span></span> <span class="n">sensor_volt</span><span class="p">;</span></td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="7"><div class="hljs-ln-n" data-line-number="7"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="7">    <span class="kt"><span class="hljs-keyword">float</span></span> <span class="n">RS_air</span><span class="p">;</span> <span class="c1"><span class="hljs-comment">//  Get the value of RS via in a clear air</span></span></td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="8"><div class="hljs-ln-n" data-line-number="8"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="8">    <span class="kt"><span class="hljs-keyword">float</span></span> <span class="n">R0</span><span class="p">;</span>  <span class="c1"><span class="hljs-comment">// Get the value of R0 via in LPG</span></span></td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="9"><div class="hljs-ln-n" data-line-number="9"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="9">    <span class="kt"><span class="hljs-keyword">float</span></span> <span class="n">sensorValue</span><span class="p">;</span></td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="10"><div class="hljs-ln-n" data-line-number="10"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="10"> </td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="11"><div class="hljs-ln-n" data-line-number="11"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="11">    <span class="cm"><span class="hljs-comment">/*--- Get a average data by testing 100 times ---*/</span></span></td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="12"><div class="hljs-ln-n" data-line-number="12"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="12">    <span class="k"><span class="hljs-keyword">for</span></span><span class="p">(</span><span class="kt"><span class="hljs-keyword">int</span></span> <span class="n">x</span> <span class="o">=</span> <span class="mi"><span class="hljs-number">0</span></span> <span class="p">;</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi"><span class="hljs-number">100</span></span> <span class="p">;</span> <span class="n">x</span><span class="o">++</span><span class="p">)</span></td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="13"><div class="hljs-ln-n" data-line-number="13"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="13">    <span class="p">{</span></td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="14"><div class="hljs-ln-n" data-line-number="14"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="14">        <span class="n">sensorValue</span> <span class="o">=</span> <span class="n">sensorValue</span> <span class="o">+</span> <span class="n">analogRead</span><span class="p">(</span><span class="n">A0</span><span class="p">);</span></td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="15"><div class="hljs-ln-n" data-line-number="15"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="15">    <span class="p">}</span></td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="16"><div class="hljs-ln-n" data-line-number="16"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="16">    <span class="n">sensorValue</span> <span class="o">=</span> <span class="n">sensorValue</span><span class="o">/</span><span class="mf"><span class="hljs-number">100.0</span></span><span class="p">;</span></td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="17"><div class="hljs-ln-n" data-line-number="17"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="17">    <span class="cm"><span class="hljs-comment">/*-----------------------------------------------*/</span></span></td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="18"><div class="hljs-ln-n" data-line-number="18"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="18"> </td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="19"><div class="hljs-ln-n" data-line-number="19"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="19">    <span class="n">sensor_volt</span> <span class="o">=</span> <span class="n">sensorValue</span><span class="o">/</span><span class="mi"><span class="hljs-number">1024</span></span><span class="o">*</span><span class="mf"><span class="hljs-number">5.0</span></span><span class="p">;</span></td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="20"><div class="hljs-ln-n" data-line-number="20"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="20">    <span class="n">RS_air</span> <span class="o">=</span> <span class="p">(</span><span class="mf"><span class="hljs-number">5.0</span></span><span class="o">-</span><span class="n">sensor_volt</span><span class="p">)</span><span class="o">/</span><span class="n">sensor_volt</span><span class="p">;</span> <span class="c1"><span class="hljs-comment">// omit *RL</span></span></td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="21"><div class="hljs-ln-n" data-line-number="21"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="21">    <span class="n">R0</span> <span class="o">=</span> <span class="n">RS_air</span><span class="o">/</span><span class="mf"><span class="hljs-number">9.9</span></span><span class="p">;</span> <span class="c1"><span class="hljs-comment">// The ratio of RS/R0 is 9.9 in LPG gas from Graph (Found using WebPlotDigitizer)</span></span></td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="22"><div class="hljs-ln-n" data-line-number="22"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="22"> </td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="23"><div class="hljs-ln-n" data-line-number="23"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="23">    <span class="n">Serial</span><span class="p">.</span><span class="n"><span class="hljs-keyword">print</span></span><span class="p">(</span><span class="s"><span class="hljs-string">"sensor_volt = "</span></span><span class="p">);</span></td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="24"><div class="hljs-ln-n" data-line-number="24"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="24">    <span class="n">Serial</span><span class="p">.</span><span class="n"><span class="hljs-keyword">print</span></span><span class="p">(</span><span class="n">sensor_volt</span><span class="p">);</span></td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="25"><div class="hljs-ln-n" data-line-number="25"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="25">    <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s"><span class="hljs-string">"V"</span></span><span class="p">);</span></td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="26"><div class="hljs-ln-n" data-line-number="26"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="26"> </td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="27"><div class="hljs-ln-n" data-line-number="27"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="27">    <span class="n">Serial</span><span class="p">.</span><span class="n"><span class="hljs-keyword">print</span></span><span class="p">(</span><span class="s"><span class="hljs-string">"R0 = "</span></span><span class="p">);</span></td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="28"><div class="hljs-ln-n" data-line-number="28"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="28">    <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">R0</span><span class="p">);</span></td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="29"><div class="hljs-ln-n" data-line-number="29"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="29">    <span class="n">delay</span><span class="p">(</span><span class="mi"><span class="hljs-number">1000</span></span><span class="p">);</span></td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="30"><div class="hljs-ln-n" data-line-number="30"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="30"> </td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="31"><div class="hljs-ln-n" data-line-number="31"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="31"><span class="p">}</span></td></tr></tbody></table></code></pre></div>
+
+<ol>
+<li>然后打开Arduino IDE的串行监视器。 记下 <strong>R0</strong> 的值，这需要在下一个程序中使用。 读取稳定后，请将 <strong>R0</strong> 放在下方。</li>
+</ol>
+<p><font color="Red">将下面的 <strong>R0</strong> 替换为上面测试的 <strong>R0</strong> 值 </font>. 将下面的R0替换为上面测试的R0值。 将传感器放置在上述任何一种气体中。</p>
+<div class="highlight" id="__code_4"><button class="md-clipboard" title="Copy to clipboard" data-clipboard-target="#__code_4 pre, #__code_4 code"><span class="md-clipboard__message"></span></button><pre id="__code_5"><span></span><button class="md-clipboard" title="Copy to clipboard" data-clipboard-target="#__code_5 pre, #__code_5 code"><span class="md-clipboard__message"></span></button><code class="hljs php"><table class="hljs-ln"><tbody><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="1"><div class="hljs-ln-n" data-line-number="1"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="1"><span class="kt"><span class="hljs-keyword">void</span></span> <span class="nf">setup</span><span class="p">()</span> <span class="p">{</span></td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="2"><div class="hljs-ln-n" data-line-number="2"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="2">    <span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi"><span class="hljs-number">9600</span></span><span class="p">);</span></td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="3"><div class="hljs-ln-n" data-line-number="3"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="3"><span class="p">}</span></td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="4"><div class="hljs-ln-n" data-line-number="4"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="4"> </td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="5"><div class="hljs-ln-n" data-line-number="5"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="5"><span class="kt"><span class="hljs-keyword">void</span></span> <span class="nf">loop</span><span class="p">()</span> <span class="p">{</span></td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="6"><div class="hljs-ln-n" data-line-number="6"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="6"> </td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="7"><div class="hljs-ln-n" data-line-number="7"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="7">    <span class="kt"><span class="hljs-keyword">float</span></span> <span class="n">sensor_volt</span><span class="p">;</span></td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="8"><div class="hljs-ln-n" data-line-number="8"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="8">    <span class="kt"><span class="hljs-keyword">float</span></span> <span class="n">RS_gas</span><span class="p">;</span> <span class="c1"><span class="hljs-comment">// Get value of RS in a GAS</span></span></td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="9"><div class="hljs-ln-n" data-line-number="9"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="9">    <span class="kt"><span class="hljs-keyword">float</span></span> <span class="n">ratio</span><span class="p">;</span> <span class="c1"><span class="hljs-comment">// Get ratio RS_GAS/RS_air</span></span></td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="10"><div class="hljs-ln-n" data-line-number="10"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="10">    <span class="kt"><span class="hljs-keyword">int</span></span> <span class="n">sensorValue</span> <span class="o">=</span> <span class="n">analogRead</span><span class="p">(</span><span class="n">A0</span><span class="p">);</span></td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="11"><div class="hljs-ln-n" data-line-number="11"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="11">    <span class="n">sensor_volt</span><span class="o">=</span><span class="p">(</span><span class="kt"><span class="hljs-keyword">float</span></span><span class="p">)</span><span class="n">sensorValue</span><span class="o">/</span><span class="mi"><span class="hljs-number">1024</span></span><span class="o">*</span><span class="mf"><span class="hljs-number">5.0</span></span><span class="p">;</span></td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="12"><div class="hljs-ln-n" data-line-number="12"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="12">    <span class="n">RS_gas</span> <span class="o">=</span> <span class="p">(</span><span class="mf"><span class="hljs-number">5.0</span></span><span class="o">-</span><span class="n">sensor_volt</span><span class="p">)</span><span class="o">/</span><span class="n">sensor_volt</span><span class="p">;</span> <span class="c1"><span class="hljs-comment">// omit *RL</span></span></td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="13"><div class="hljs-ln-n" data-line-number="13"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="13"> </td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="14"><div class="hljs-ln-n" data-line-number="14"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="14">          <span class="cm"><span class="hljs-comment">/*-Replace the name "R0" with the value of R0 in the demo of First Test -*/</span></span></td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="15"><div class="hljs-ln-n" data-line-number="15"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="15">    <span class="n">ratio</span> <span class="o">=</span> <span class="n">RS_gas</span><span class="o">/</span><span class="n">R0</span><span class="p">;</span>  <span class="c1"><span class="hljs-comment">// ratio = RS/R0</span></span></td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="16"><div class="hljs-ln-n" data-line-number="16"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="16">          <span class="cm"><span class="hljs-comment">/*-----------------------------------------------------------------------*/</span></span></td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="17"><div class="hljs-ln-n" data-line-number="17"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="17"> </td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="18"><div class="hljs-ln-n" data-line-number="18"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="18">    <span class="n">Serial</span><span class="p">.</span><span class="n"><span class="hljs-keyword">print</span></span><span class="p">(</span><span class="s"><span class="hljs-string">"sensor_volt = "</span></span><span class="p">);</span></td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="19"><div class="hljs-ln-n" data-line-number="19"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="19">    <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">sensor_volt</span><span class="p">);</span></td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="20"><div class="hljs-ln-n" data-line-number="20"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="20">    <span class="n">Serial</span><span class="p">.</span><span class="n"><span class="hljs-keyword">print</span></span><span class="p">(</span><span class="s"><span class="hljs-string">"RS_ratio = "</span></span><span class="p">);</span></td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="21"><div class="hljs-ln-n" data-line-number="21"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="21">    <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">RS_gas</span><span class="p">);</span></td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="22"><div class="hljs-ln-n" data-line-number="22"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="22">    <span class="n">Serial</span><span class="p">.</span><span class="n"><span class="hljs-keyword">print</span></span><span class="p">(</span><span class="s"><span class="hljs-string">"Rs/R0 = "</span></span><span class="p">);</span></td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="23"><div class="hljs-ln-n" data-line-number="23"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="23">    <span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">ratio</span><span class="p">);</span></td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="24"><div class="hljs-ln-n" data-line-number="24"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="24"> </td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="25"><div class="hljs-ln-n" data-line-number="25"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="25">    <span class="n">Serial</span><span class="p">.</span><span class="n"><span class="hljs-keyword">print</span></span><span class="p">(</span><span class="s"><span class="hljs-string">"</span></span><span class="se"><span class="hljs-string">\n\n</span></span><span class="s"><span class="hljs-string">"</span></span><span class="p">);</span></td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="26"><div class="hljs-ln-n" data-line-number="26"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="26"> </td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="27"><div class="hljs-ln-n" data-line-number="27"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="27">    <span class="n">delay</span><span class="p">(</span><span class="mi"><span class="hljs-number">1000</span></span><span class="p">);</span></td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="28"><div class="hljs-ln-n" data-line-number="28"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="28"> </td></tr><tr><td class="hljs-ln-line hljs-ln-numbers" data-line-number="29"><div class="hljs-ln-n" data-line-number="29"></div></td><td class="hljs-ln-line hljs-ln-code" data-line-number="29"><span class="p">}</span></td></tr></tbody></table></code></pre></div>
+
+<p>现在，我们可以从下图获得气体的浓度。</p>
+<p><img alt="" src="./Grove-Gas Sensor MQ9 - Seeed产品文档_files/GAS_Sensor_7.png"></p>
+<p>根据该图可以看出，我们可以测试的最小浓度为200ppm，最大值为10000ppm，换句话说，我们可以得到0.02％〜1％之间的气体浓度。 然而，我们不能得到一个公式，因为比例和浓度之间的关系是非线性的。</p>
+<h2 id="_9">资源下载<a class="headerlink" href="https://wiki.seeedstudio.com/cn/Grove-Gas_Sensor-MQ9/#_9" title="Permanent link">¶</a></h2>
+<p><strong>参考阅读</strong></p>
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Flammability_limit">什么是 LEL</a></li>
+</ul>
+<h2 id="_10">原理图在线预览<a class="headerlink" href="https://wiki.seeedstudio.com/cn/Grove-Gas_Sensor-MQ9/#_10" title="Permanent link">¶</a></h2>
+<div class="altium-ecad-viewer" data-project-src="https://files.seeedstudio.com/wiki/Grove-Gas_Sensor-MQ9/res/Gas_Sensor_Eagle_files.zip" style="border-radius: 4px; height: 500px; border: 1px solid rgb(232, 232, 232); overflow: hidden; max-width: 1280px; max-height: 700px; box-sizing: border-box;" data-iframe-guid="047b3f65-0880-0e32-4acc-c55928ea0264">
+<iframe data-src="https://viewer.altium.com/client/index.html?ver=1603854953464" class="lazy altium-web-viewer" style="overflow:hidden; height:100%; width:100%; border: none;" scrolling="no" allowfullscreen="true" onload="window.top.scrollTo(0,0);" src="./Grove-Gas Sensor MQ9 - Seeed产品文档_files/saved_resource.html"></iframe></div>
+
+<h2 id="_11"><strong>原理图</strong><a class="headerlink" href="https://wiki.seeedstudio.com/cn/Grove-Gas_Sensor-MQ9/#_11" title="Permanent link">¶</a></h2>
+<ul>
+<li><strong>[Eagle 文件]</strong><a href="https://files.seeedstudio.com/wiki/Grove-Gas_Sensor-MQ9/res/Gas_Sensor_Eagle_files.zip">Grove Gas Sensor - EAGLE (Schematic and Board) files</a></li>
+<li><strong>[PDF 文件]</strong><a href="https://files.seeedstudio.com/wiki/Grove-Gas_Sensor-MQ9/res/Gas_Sensor_Schematic.pdf">Grove Gas Sensor - PDF Schematic</a></li>
+</ul>
+<p><strong>数据手册</strong></p>
+<ul>
+<li><a href="https://files.seeedstudio.com/wiki/Grove-Gas_Sensor-MQ9/res/MQ-9.pdf">MQ-9 Datasheet</a></li>
+</ul>
+<!-- This Markdown file was created from http://www.seeedstudio.com/wiki/Grove_-_Gas_Sensor(MQ9) -->
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  <!-- 
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="Grove-Gas_Sensor-MQ5/" title="Grove-Gas Sensor MQ5" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Grove-Gas Sensor MQ5
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="Grove-Gas_Sensor-O2/" title="Grove-Gas Sensor O2" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Grove-Gas Sensor O2
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Seeedstudio 2020
+          </div>
+        
+        powered by
+        <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        and
+        <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <a href="https://www.facebook.com/seeedstudiosz/" class="md-footer-social__link fa fa-facebook"></a>
+    
+      <a href="https://github.com/SeeedDocument" class="md-footer-social__link fa fa-github-alt"></a>
+    
+  </div>
+
+      
+    </div>
+  </div> -->
+  <div class="be-footer"></div>
+  <div class="footer--info com-width center f14 c-9e">
+    <div class="block">
+      <ul>
+        <li class="title">Company</li>
+        <li>
+          <a href="https://www.seeedstudio.com/about_us.html" title="About Seeed" rel="nofollow" target="_blank">About Seeed</a>
+        </li>
+        <li>
+          <a href="https://www.seeedstudio.com/distributors.html" title="Distributors" rel="nofollow" target="_blank">Distributors</a>
+        </li>
+        <li>
+          <a href="https://www.lagou.com/gongsi/35919.html" title="Careers" target="_blank" rel="nofollow">Careers</a>
+        </li>
+        <li>
+          <a href="https://www.seeedstudio.com/contact-us.html" title="Customer Service" rel="nofollow" target="_blank">Contacts</a>
+        </li>
+      </ul>
+    </div>
+    <div class="block">
+      <ul>
+        <li class="title">Help Center</li>
+        <li>
+          <a href="https://www.seeedstudio.com/get_help.html" title="How to Get Help" rel="nofollow" target="_blank">How to Get Help</a>
+        </li>
+        <li>
+          <a href="http://support.seeedstudio.com/knowledgebase" title="FAQ" rel="nofollow" target="_blank">FAQ</a>
+        </li>
+        <li>
+          <a href="https://www.seeedstudio.com/support.html" title="Technical Support" rel="nofollow" target="_blank">Technical Support</a>
+        </li>
+        <li>
+          <a href="https://www.seeedstudio.com/shipinfo.html" title="Shipping &amp; Order" rel="nofollow" target="_blank">Shipping &amp; Order</a>
+        </li>
+        <li>
+          <a href="https://www.seeedstudio.com/warranty.html" title="Return" rel="nofollow" target="_blank">Warranty &amp; Returns</a>
+        </li>
+        <li>
+          <a href="https://www.seeedstudio.com/paymentinfo.html" title="Payment" rel="nofollow" target="_blank">Payment Information
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="block">
+      <ul class="last-block">
+        <li class="title">Community</li>
+        <li><a href="https://project.seeedstudio.com/" title="Project Hub" rel="nofollow" target="_blank">Project Hub</a></li>
+        <li><a href="https://forum.seeedstudio.com/" title="Forum" rel="nofollow" target="_blank">Forum</a></li>
+        <li><a href="http://www.seeedstudio.com/blog" title="Blog" rel="nofollow" target="_blank">Blog</a></li>
+        <li><a href="http://wiki.seeedstudio.com/" title="Wiki" rel="nofollow" target="_blank">Wiki</a></li>
+      </ul>
+    </div>
+    <div class="block search">
+      <ul>
+        <li class="title">Stay Tuned</li>
+        <li class="f12 sign-text">Subscribe to our newsletter.</li>
+        <li class="sign clear">
+          <!-- Begin MailChimp Signup Form -->
+          <style type="text/css">
+            #mc_embed_signup {
+              background: #fff;
+              clear: left;
+              font: 1.16rem Helvetica, Arial, sans-serif;
+            }
+
+            /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+                  We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+
+            #mce-EMAIL {
+              float: left;
+              width: 20rem;
+              padding: 0 .6rem;
+              color: #333;
+              height: 2.5rem;
+              border: 1px solid #B5B7B6;
+              height: 3.3rem;
+              line-height: 3.3rem;
+            }
+
+            #mc-embedded-subscribe {
+              color: #fff;
+              float: left;
+              width: 3.3em;
+              height: 3.3rem;
+              cursor: pointer;
+              border: none;
+              background: #00936D;
+              text-align: center;
+              font-size: 1rem;
+            }
+          </style>
+          <div id="mc_embed_signup">
+            <form action="https://seeedstudio.us11.list-manage.com/subscribe/post?u=0c272aa6642cc5d058579205f&amp;id=9ed5dc2e6d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
+              <div id="mc_embed_signup_scroll">
+                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required="">
+                <input type="submit" value="&gt;" name="subscribe" id="mc-embedded-subscribe" class="button">
+              </div>
+            </form>
+          </div>
+
+          <!--End mc_embed_signup-->
+        </li>
+        <li class="social f16 foot-sns-li">
+          <a rel="nofollow" href="https://www.facebook.com/seeedstudiosz/" target="_blank" title="" class="sns__ico sns--facebook">
+            <i class="fa fa-facebook"></i>
+          </a>
+          <a rel="nofollow" href="http://twitter.com/seeedstudio" title="" target="_blank" class="sns__ico sns--twitter">
+            <i class="fa fa-twitter"></i>
+          </a>
+          <a rel="nofollow" href="https://www.youtube.com/channel/UC5mX-JaRWXc8cBc1gm5kKhg" title="" target="_blank" class="sns__ico sns--youtube">
+            <i class="fa fa-youtube-play"></i>
+          </a>
+          <a rel="nofollow" href="http://plus.google.com/+Seeedstudio-openhardware" target="_blank" title="" class="sns__ico sns--google-plus">
+            <i class="fa fa-google-plus"></i>
+          </a>
+          <a rel="nofollow" href="http://instagram.com/seeedstudio" title="" target="_blank" class="sns__ico sns--instagram">
+            <i class="fa fa-instagram"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer--copyright f14">
+    <div class="copyrightDetail center clear">
+      <div class="fl copyrightText">
+        © 2008-2018 Seeed Technology Co.,Ltd. All rights reserved.
+      </div>
+      <ul class="fl footer-list">
+        <li class="fl site-map">
+          <a href="https://www.seeedstudio.com/sitemap.html" title="Site Map" target="_blank" rel="nofollow">Site Map</a>
+        </li>
+        <li class="fl policy">
+          <a href="https://www.seeedstudio.com/privacy_policy.html" title="" rel="nofollow" target="_blank">Privacy Policy</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="./Grove-Gas Sensor MQ9 - Seeed产品文档_files/application-c35428f87f.js.下載"></script>
+      
+      
+      <script>app.initialize({url:{base:".."}})</script>
+      
+        <script src="./Grove-Gas Sensor MQ9 - Seeed产品文档_files/extra.js.下載"></script>
+      
+        <script src="./Grove-Gas Sensor MQ9 - Seeed产品文档_files/latest"></script>
+      
+    
+    
+      
+    
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+	 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W2VX3NP"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+=======
+	 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MWS4BDL"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; 60a8f64d0414dcd5cb8612f64b46979443258e0b
+  
+ 
+</body></html>

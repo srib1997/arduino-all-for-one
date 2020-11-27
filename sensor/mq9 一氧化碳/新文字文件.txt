@@ -1,0 +1,55 @@
+MQ-9 一氧化碳可燃氣體感測器 支援檢測報警觸發
+MQ-9氣體傳感器所使用的氣敏材料是在清潔空氣中電導率較低的二氧化錫(SnO2)。採用高低溫循環檢測方式低溫（1.5V加熱）檢測一氧化碳，傳感器的電導率隨空氣中一氧化碳氣體濃度增加而增大，高溫（5.0V加熱）檢測可燃氣體甲烷、丙烷並清洗低溫時吸附的雜散氣體。使用簡單的電路即可將電導率的變化，轉換為與該氣體濃度相對應的輸出信號。MQ-9氣體傳感器對一氧化碳、甲烷、液化氣的靈敏度高，這種傳感器可檢測多種含一氧化碳及可燃性的氣體，是一款適合多種應用的低成本傳感器
+
+模組應用：
+適用於家庭或工廠的氣體洩漏監測裝置，適宜於一氧化碳、可燃氣體等監測裝置, 可測試一氧化碳10 to 1000ppm CO、可燃氣體100 to 10000ppm範圍
+
+模組特色：
+1、採用優質雙面板設計，具有電源指示和TTL信號輸出指示；
+2、具有DO開關信號（TTL）輸出和AO類比信號輸出；
+3、TTL輸出有效信號為低電平。（當輸出低電平時信號燈亮，可直接接單片機或繼電器模組）
+4、類比量輸出的電壓隨濃度越高電壓越高。
+5、對一氧化碳檢測有較好的靈敏度。
+6、有四個螺絲孔便於定位；
+7、產品外形尺寸：32(L)*20(W)*22(H)
+8、具有長期的使用壽命和可靠的穩定性
+9、快速的回應恢復特性
+電氣性能：
+輸入電壓：DC5V 功耗（電流）：150mA
+DO輸出：TTL數字量0和1（0.1和5V）
+AO輸出：0.1-0.3V（相對無污染），最高濃度電壓4V左右
+特別提醒：感測器通電後，需要預熱20S左右，測量的資料才穩定，感測器發熱屬於正常現象，因為內部有電熱絲，如果燙手就不正常了。
+ 
+
+ Arduino 範例程式碼 適用於所有 MQ 氣體感測器
+/* MQ Sensor Circuit with Arduino */
+
+const int AOUTpin=0;//the AOUT pin of the MQ sensor goes into analog pin A0 of the arduino
+const int DOUTpin=8;//the DOUT pin of the MQ sensor goes into digital pin D8 of the arduino
+const int ledPin=13;//the anode of the LED connects to digital pin D13 of the arduino
+
+int limit;
+int value;
+
+void setup() {
+Serial.begin(115200);//sets the baud rate
+pinMode(DOUTpin, INPUT);//sets the pin as an input to the arduino
+pinMode(ledPin, OUTPUT);//sets the pin as an output of the arduino
+}
+
+void loop()
+{
+value= analogRead(AOUTpin);//reads the analaog value from the MQ sensor's AOUT pin
+limit= digitalRead(DOUTpin);//reads the digital value from the MQ sensor's DOUT pin
+Serial.print("Gas value: ");
+Serial.println(value);//prints the CO value
+Serial.print("Limit: ");
+Serial.print(limit);//prints the limit reached as either LOW or HIGH (above or underneath)
+delay(100);
+if (limit == HIGH){
+digitalWrite(ledPin, HIGH);//if limit has been reached, LED turns on as status indicator
+}
+else{
+digitalWrite(ledPin, LOW);//if threshold not reached, LED remains off
+}
+}
